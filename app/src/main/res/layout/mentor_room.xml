@@ -15,20 +15,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/signback" />
+        />
 
     <ImageView
         android:id="@+id/UserIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="128dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/back"
         app:srcCompat="@drawable/usericon" />
 
     <TextView
-        android:id="@+id/mentor"
+        android:id="@+id/student"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Наставник"
@@ -47,43 +47,50 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mentor">
+        app:layout_constraintTop_toBottomOf="@+id/student">
 
-        <TableLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/edittext_back">
+            android:orientation="horizontal"
+            android:background="@color/white">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="28dp"
+                android:background="transparent"
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="16dp"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/QuestionnaireImage"
+                        android:id="@+id/resumeImage"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/studentsicon" />
+                        android:background="@color/white"
+                        app:srcCompat="@drawable/resumeicon" />
 
                     <TextView
-                        android:id="@+id/Questionnaire"
+                        android:id="@+id/resume"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/white"
                         android:text="Студенты"
                         android:textAligment="center"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/blue"
                         android:textSize="18sp" />
+
                 </LinearLayout>
 
-
-            </TableRow>
-
-        </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -92,7 +99,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Выйти"
-        app:backgroundTint="#00FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
