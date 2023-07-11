@@ -28,7 +28,6 @@
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:text="добавить описание"
-        app:backgroundTint="@color/white"
         android:textColor="@color/blue"
         tools:layout_editor_absoluteX="52dp"
         tools:layout_editor_absoluteY="256dp"/>
